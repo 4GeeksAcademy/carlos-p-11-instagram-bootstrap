@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Instagram Photo Feed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container-flex">
+
+    <!-- INICIO BARRA DE NAVEGACION PRINCIPAL-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <div class="container-fluid">
+        <a class="col navbar-brand" href="#">
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <b class="text-secondary-emphasis">Instagram</b>
+        </a>
+
+        <div class="d-flex justify-content-end">        
+
+            <!--INICIO BOTON + MODAL "CREAR NUEVO POST"-->            
+              <div class="me-4">
+              <button type="button" class="btn btn-primary btn-success" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Create new post            
+              </button>        
+            </div>
+            <!--FINAL BOTON + MODAL "CREAR NUEVO POST"-->
+
+            <!--INICIO BOTON DROPDOWN-->            
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear fa-2xl"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+              </ul>            
+            <!--FIN BOTON DROPDOWN-->
+        
+        </div>
+      </div>
+    </nav>
+    <!--FIN DE LA BARRA DE NAVEGACION PRINCIPAL-->
+
+
+    <!--INICIO BARRA MODAL CAMBIO DE VISUALIZACION-->
+    <ul class="nav justify-content-center">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+      <!--INICIO GRILLA 3X3-->
+      <div class="tab-pane fade show active px-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+        <div class="row my-4">
+          <div class="col">
+            <img src="./images/bicho.png" class="img-fluid" alt="El Bicho">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/clase.png" class="img-fluid" alt="Una Clase">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/codigo.png" class="img-fluid" alt="Codigo">
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col d-flex">
+            <img src="./images/familia.png" class="img-fluid" alt="familia">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/paraiso.png" class="img-fluid" alt="paraiso">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/paris.png" class="img-fluid" alt="paris">
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col d-flex">
+            <img src="./images/perro.png" class="img-fluid" alt="perro">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/personas.png" class="img-fluid" alt="personas">
+          </div>
+          <div class="col d-flex">
+            <img src="./images/sonrisa.png" class="img-fluid" alt="sonrisa">
+          </div>
+        </div>
+      </div>
+      <!--FIN GRILLA 3X3-->
+
+
+      <!--INICIO GRILLA CARDS -->
+      <div class="tab-pane fade my-4" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+        <div class="row my-3">
+          <div class="d-flex col justify-content-center">
+            <div class="card" style="width: 50%;">
+              <div class="row p-2">
+                <h3 class=" col card-title">My crazy dog spark! </h3>
+                <p class="col text-end text-secondary"> 08/26 </p>
+              </div>
+              <img src="./images/perro.png" class="img-fluid" alt="perro">
+              <div class="card-body">
+                <p class="card-text"> <b> 3215654 Likes </b> <br>Everybody loves puppies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="d-flex col justify-content-center">
+            <div class="card" style="width: 50%;">
+              <div class="row p-2">
+                <h3 class="col card-title"> Greatness of Coatia </h3>
+                <p class="col text-end text-secondary"> 04/09 </p>
+              </div>
+              <img src="./images/paraiso.png" class="img-fluid" alt="paraiso">
+              <div class="card-body">
+                <p class="card-text"> <b> 54654 Likes </b> <br>This is an example of a very good photo you can
+                  post on Instagram</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="d-flex col justify-content-center">
+            <div class="card" style="width: 50%;">
+              <div class="row p-2">
+                <h5 class="col card-title">El Bicho did it again! </h5>
+                <p class="col text-end text-secondary"> 06/10 </p>
+              </div>
+              <img src="./images/bichoB.png" class="img-fluid" alt="El Bicho">
+              <div class="card-body">
+                <p class="card-text"> <b> 32154564654654 Likes </b> <br>Another amazing goal by Cristiano</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--FIN GRILLA CARDS -->
+
+    </div>
+  </div>
+
+  <!--INICIO VENTANA MODAL-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Caption</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Add the caption of your post here"></textarea>
+          </div>
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+          </button>
+
+          <button type="button" class="btn btn-light btn-sm">
+            <i class="fa-solid fa-camera fa-lg"></i>
+          </button>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--FIN VENTANA MODAL-->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
